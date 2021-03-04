@@ -60,6 +60,7 @@ jobs:
         pytest
 
   Scan-Build:
+    needs: test
     # Scan runs on ubuntu, mac and windows
     runs-on: ubuntu-latest
     steps:
